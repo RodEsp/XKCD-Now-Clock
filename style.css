@@ -7,6 +7,11 @@ h1 {
     font-size: 34px;
 }
 
+p {
+    position: relative;
+    z-index: 2;
+}
+
 a {
     font-weight: bold;
     color: #FFAD00;
@@ -21,7 +26,8 @@ a {
 }
 
 .world {
-    position: relative;
+    z-index: 1;
+    position: absolute;
     margin: auto;
     width: 675px;
     height: 675px;
