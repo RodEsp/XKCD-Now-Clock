@@ -2,25 +2,30 @@
 <head>
     <title>XKCD Now Clock</title>
     <link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
     <h1>XKCD Now Clock</h1>
 
     <p>This is a real-time client side version of <a href="http://xkcd.com/now/" target="_blank">http://xkcd.com/now/</a>.
         <br/>
-        Inspired from <a href="https://news.ycombinator.com/item?id=7384025" target="_blank">this</a> hacker news thread
-        and <a href="https://github.com/meandavejustice/xkcd-now" target="_blank">this</a> project by Dave Justice.
+        Inspired by <a href="https://news.ycombinator.com/item?id=7384025" target="_blank">this thread</a> on hacker news
+        and <a href="https://github.com/meandavejustice/xkcd-now" target="_blank">this project</a> by Dave Justice.
         <br/>
         You can checkout the source <a href="https://github.com/RodEsp/xkcd-now-clock" target="_blank">here</a>.
     </p>
 
     <div id="clock">
+        <div id="timelines" style="display:none;"></div>
         <div id="world"></div>
+        <div id="worldTwo" style="display:none;"></div>
     </div>
 
+    <button id="toggleTimeLines" onclick="toggleTimeLines()">Toggle Time Lines</button>
+    <button id="toggleWorldTwo" onclick="toggleWorldTwo()">Toggle Scale Accurate Map</button>
+
     <p id="disclaimer">
-        <span>DISCLAIMER:</span>
-        <br/>
+        <span>DISCLAIMER:</span><br/>
         The clock uses UTC and the map's orientation is based on the Greenwich Meridian (roughly England). Therefore England's orientation will always
         show the correct time but due to scaling issues and things like Daylight Saving time it might be off for other locations.
     </p>

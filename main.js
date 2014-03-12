@@ -1,4 +1,6 @@
 var world = document.querySelector('#world');
+var worldTwo = document.querySelector('#worldTwo');
+var timelines = document.querySelector("#timelines");
 var rotationAngle = 360 / (60 * 60 * 24); // 360 degrees divided by seconds in a day
 var prefixes = ['webkitTransform', 'MozTransform', 'msTransform', 'OTransform', 'transform'];
 
@@ -9,6 +11,7 @@ function updateMap() {
     var rotString = 'rotate(' + rotationString + 'deg)';
     prefixes.forEach(function (el) {
         world.style[el] = rotString;
+        worldTwo.style[el] = rotString;
     });
 }
 
@@ -17,3 +20,19 @@ setInterval(function () {
 }, 1000);
 
 updateMap();
+
+function toggleTimeLines() {
+    if (timelines.style["display"] === "none") {
+        timelines.style["display"] = "block";
+    } else {
+        timelines.style["display"] = "none";
+    }
+}
+
+function toggleWorldTwo() {
+    if (worldTwo.style["display"] === "none") {
+        worldTwo.style["display"] = "block";
+    } else {
+        worldTwo.style["display"] = "none";
+    }
+}

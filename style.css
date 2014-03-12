@@ -1,40 +1,67 @@
 body {
-    font-family: monospace;
     text-align: center;
+    font-family: monospace;
 }
 
 h1 {
-    font-size: 34px;
     margin: 13px auto;
+    font-size: 34px;
 }
 
 p {
-    position: relative;
-    margin: 13px auto;
     width: 675px;
-    z-index: 2;
+    margin: 13px auto;
+    z-index: 4;
+    position: relative;
 }
 
 a {
-    font-weight: bold;
     color: #FFAD00;
+    font-weight: bold;
 }
 
 #clock {
-    position: relative;
-    margin: auto;
     width: 675px;
     height: 675px;
+    margin: auto;
+    position: relative;
     background-image: url(clock.png);
 }
 
-#world {
-    z-index: 1;
-    position: absolute;
-    margin: auto;
+#timelines {
     width: 675px;
     height: 675px;
+    z-index: 3;
+    position: absolute;
+    background-image: url(timelines.png);
+}
+
+#world {
+    width: 675px;
+    height: 675px;
+    z-index: 1;
+    position: absolute;
     background-image: url(world.png);
+}
+
+#worldTwo {
+    width: 675px;
+    height: 675px;
+    z-index: 2;
+    position: absolute;
+    background-image: url(world2.png);
+}
+
+#toggleTimeLines {
+    z-index: 4;
+    position: relative;
+    margin-top: 13px;
+}
+
+#toggleWorldTwo {
+    z-index: 4;
+    position: relative;
+    margin-top: 13px;
 }
 
 #disclaimer span {
