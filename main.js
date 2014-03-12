@@ -4,7 +4,7 @@ var prefixes = ['webkitTransform', 'MozTransform', 'msTransform', 'OTransform', 
 
 function updateMap() {
     var date = new Date();
-    var rotationMultiplier = (date.getUTCHours() * 60 * 60) + (date.getUTCMinutes() * 60) + date.getUTCSeconds();
+    var rotationMultiplier = (date.getUTCHours() * 60 * 60) + (date.getUTCMinutes() * 60) + date.getUTCSeconds(); //Seconds since the start of the day.
     var rotationString = (rotationAngle * rotationMultiplier) + 180;
     var rotString = 'rotate(' + rotationString + 'deg)';
     prefixes.forEach(function (el) {

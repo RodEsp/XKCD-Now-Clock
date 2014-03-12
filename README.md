@@ -1,4 +1,4 @@
-# XKCD NOW
+# XKCD Now Clock
 
 Realtime client side version of [http://xkcd.com/now/](http://xkcd.com/now)
 
