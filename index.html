@@ -14,9 +14,16 @@
         You can checkout the source <a href="https://github.com/RodEsp/xkcd-now-clock" target="_blank">here</a>.
     </p>
 
-    <div class="clock">
-        <div class="world"></div>
+    <div id="clock">
+        <div id="world"></div>
     </div>
+
+    <p id="disclaimer">
+        <span>DISCLAIMER:</span>
+        <br/>
+        The clock uses UTC and the map's orientation is based on the Greenwich Meridian (roughly England). Therefore England's orientation will always
+        show the correct time but due to scaling issues and things like Daylight Saving time it might be off for other locations.
+    </p>
 
     <script type="text/javascript" src="main.js"></script>
 </body>

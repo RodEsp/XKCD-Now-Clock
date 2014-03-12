@@ -1,4 +1,4 @@
-var world = document.querySelector('.world');
+var world = document.querySelector('#world');
 var rotationAngle = 360 / (60 * 60 * 24); // 360 degrees divided by seconds in a day
 var prefixes = ['webkitTransform', 'MozTransform', 'msTransform', 'OTransform', 'transform'];
 
@@ -10,7 +10,6 @@ function updateMap() {
     prefixes.forEach(function (el) {
         world.style[el] = rotString;
     });
-    console.log('map updated at => ' + new Date());
 }
 
 setInterval(function () {
