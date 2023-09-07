@@ -8,4 +8,4 @@ Inspired by this [thread](https://news.ycombinator.com/item?id=7384025) on hacke
 ## See it live and in action here!
 [rodesp.github.io/XKCD-Now-Clock](https://rodesp.github.io/XKCD-Now-Clock)
 
-<a href="https://rodesp.github.io/XKCD-Now-Clock" target="_blank">![A screenshot of the clock's website](https://github.com/RodEsp/XKCD-Now-Clock/assets/1084688/844add79-d15b-4eb0-b147-55c921fe5464)</a>
+<a href="https://rodesp.github.io/XKCD-Now-Clock" target="_blank"><img src="https://github.com/RodEsp/XKCD-Now-Clock/assets/1084688/844add79-d15b-4eb0-b147-55c921fe5464"/></a>
